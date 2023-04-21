@@ -11,6 +11,10 @@ contrib_filenames = c(
 )
 contrib_urls = paste0(contrib_base_url, contrib_filenames, ".csv")
 contrib = lapply(contrib_urls, read.csv)
+contrib = lapply(contrib, function(x) {
+  class(x) = c("tbl_df", "tbl", "data.table", "data.frame")
+  return(x)
+})
 names(contrib) = contrib_filenames
 with(contrib, {
   for (file in names(contrib)) {

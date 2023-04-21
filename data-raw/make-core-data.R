@@ -22,6 +22,10 @@ core_filenames = c(
 )
 core_urls = paste0(core_base_url, core_filenames, ".csv")
 core = lapply(core_urls, read.csv)
+core = lapply(core, function(x) {
+  class(x) = c("tbl_df", "tbl", "data.table", "data.frame")
+  return(x)
+})
 names(core) = core_filenames
 with(core, {
   for (file in names(core)) {
