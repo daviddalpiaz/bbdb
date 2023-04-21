@@ -24,5 +24,7 @@ core_urls = paste0(core_base_url, core_filenames, ".csv")
 core = lapply(core_urls, read.csv)
 names(core) = core_filenames
 with(core, {
-  save(list = names(core), file = "data/core.RData", compress = "xz")
+  for (file in names(core)) {
+    save(list = file, file = paste0("data/", file, ".rda"), compress = "xz")
+  }
 })
