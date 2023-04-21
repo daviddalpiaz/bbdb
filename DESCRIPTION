@@ -1,14 +1,15 @@
 Package: bbdb
-Title: What the Package Does (One Line, Title Case)
+Title: BaseBall DataBank
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person(given = "David", family = "Dalpiaz", email = "dalpiaz2@illinois.edu", role = c("aut", "cre"))
+Description: Loads tables from the Baseball Databank maintained by the Chadwick Baseball Bureau.
 License: GPL (>= 3) + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+URL: https://github.com/daviddalpiaz/bbdb
+BugReports: https://github.com/daviddalpiaz/bbdb/issues
 Depends: 
     R (>= 2.10)
 LazyData: true
