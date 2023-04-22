@@ -2,7 +2,7 @@
 % Please edit documentation in R/Statistics.R
 \name{calcBA}
 \alias{calcBA}
-\title{Calculate batting average}
+\title{Calculate batting average and add to data frame}
 \usage{
 calcBA(data)
 }
@@ -10,8 +10,11 @@ calcBA(data)
 \item{data}{A data frame with columns H (hits) and AB (at-bats)}
 }
 \value{
-A data frame with the BA column
+The input data frame with added BA column
 }
 \description{
-Calculate batting average
+Calculate batting average and add to data frame
+}
+\examples{
+calcBA(Batting)
 }
