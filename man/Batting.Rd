@@ -5,15 +5,27 @@
 \alias{Batting}
 \title{Batting data}
 \format{
-A data frame with 112184 rows and 22 columns:
+A table with 112184 rows and 22 columns.
+Technically an object with class \code{c("tbl_df", "tbl", "data.table", "data.frame")}
+to accomodate base R, \code{tidyverse}, and \code{data.table} users. Each row of the data
+represents a player-season-team combination.
 \describe{
 \item{\code{playerID}}{\verb{[character]} Lahman ID for MLB Player}
+\item{\code{yearID}}{\verb{[integer]} Four digit year}
 }
 }
 \usage{
 Batting
 }
 \description{
-TODO: add description and more
+Regular season batting data, mostly counting statistics, for all major league
+hitters from 1871 to 2022.
+}
+\details{
+This data was last updated on \strong{2023-05-05}. The data was sourced from the
+Chadwick Baseball Bureau \href{https://github.com/chadwickbureau/baseballdatabank}{Baseball Databank}.
+The Baseball Databank is the source data for the Sean Lahman's Baseball Database
+which is often accessed through the
+\href{https://cran.r-project.org/web/packages/Lahman/index.html}{\code{Lahman} package}.
 }
 \keyword{datasets}
