@@ -16,6 +16,7 @@
 #' represents a player-season-team combination.
 #' \describe{
 #'   \item{`playerID`}{`[character]` Lahman ID for MLB Player}
-#'   \item{`yearID`}{`[integer]` Four digit year}
+#'   \item{`yearID`}{`[integer]` Four digit year indicating a season}
+#'   \item{`stint`}{`[integer]` Order of apperance on teams for the player within a season}
 #' }
 "Batting"

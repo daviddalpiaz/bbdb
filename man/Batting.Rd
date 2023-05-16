@@ -11,7 +11,8 @@ to accomodate base R, \code{tidyverse}, and \code{data.table} users. Each row of
 represents a player-season-team combination.
 \describe{
 \item{\code{playerID}}{\verb{[character]} Lahman ID for MLB Player}
-\item{\code{yearID}}{\verb{[integer]} Four digit year}
+\item{\code{yearID}}{\verb{[integer]} Four digit year indicating a season}
+\item{\code{stint}}{\verb{[integer]} Order of apperance on teams for the player within a season}
 }
 }
 \usage{
@@ -22,7 +23,7 @@ Regular season batting data, mostly counting statistics, for all major league
 hitters from 1871 to 2022.
 }
 \details{
-This data was last updated on \strong{2023-05-05}. The data was sourced from the
+This data was last updated on \strong{2023-05-15}. The data was sourced from the
 Chadwick Baseball Bureau \href{https://github.com/chadwickbureau/baseballdatabank}{Baseball Databank}.
 The Baseball Databank is the source data for the Sean Lahman's Baseball Database
 which is often accessed through the
